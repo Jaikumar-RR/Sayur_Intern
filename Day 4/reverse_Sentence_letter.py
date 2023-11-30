@@ -4,10 +4,15 @@
 # Eg- input - I am Sayur
 # Output I ma ruyaS
 
-sentences = input("Enter Your sentences : ")
+def Reversing_Sentence_words(sentence):
+    sentence = sentence.split()
+    for word in sentence :
+        print(word[::-1],end=" ")
 
-sentences = sentences.split()
 
-for word in sentences :
-    print(word[::-1],end=" ")
+sentence = input("Enter Your sentences : ")
+
+Reversing_Sentence_words(sentence)
+
+
     
